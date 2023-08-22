@@ -10,16 +10,16 @@
 void puts2(char *str)
 {
 	int length = 0;
-	int r = 0;
-	char *u = str;
+	int t = 0;
+	char *y = str;
 	int i;
 
-	while (*u != '\0')
+	while (*y != '\0')
 	{
-		u++;
+		y++;
 		length++;
 	}
-	r = length - 1;
+	t = length - 1;
 	for (i = 0 ; i <= t ; i++)
 	{
 		if (i % 2 == 0)
