@@ -3,17 +3,17 @@
 /**
  * puts2 - function should print only one character out of two
  * starting with the first one
- * @str: input
- * Return: print
+ * @str: string input
+ * Return: nothing
 */
 void puts2(char *str)
 {
-	int m
+	int o
 
-	for (m = 0 ; str[m] != '\0' ; m++)
+	for (o = 0 ; str[o] != '\0' ; o++)
 	{
-		if (m % 2 == 0)
-		_putchar(str[m]);
+		if (o % 2 == 0)
+		_putchar(str[o]);
 	}
 	_putchar('\n');
 }
