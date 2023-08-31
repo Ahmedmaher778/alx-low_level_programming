@@ -7,7 +7,7 @@ int square(int m, int l);
  * @m: int
  * Return: the resulting square root
 */
-int _sqrt_recursion(int l)
+int _sqrt_recursion(int m)
 {
 	if (m < 0)
 		return (-1);
