@@ -7,13 +7,14 @@
  *
  * Return: 0 (Success),no-zero-fail
 */
+
 int main(int argc, char *argv[])
 {
 	int s;
 
 	if (argc == 3)
 	{
-		sum = atoi(argv[1]) * atoi(argv[2]);
+		s = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", s);
 	}
 	else
