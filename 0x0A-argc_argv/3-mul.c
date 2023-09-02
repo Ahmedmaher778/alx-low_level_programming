@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all arguments it receives
+ * main - prints sum of 2 numbers
  * @argc: number of arguments
  * @argv: pointer to array of arguments
  *
