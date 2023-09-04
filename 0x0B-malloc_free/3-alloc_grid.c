@@ -38,7 +38,7 @@ int **alloc_grid(int width, int height)
 	for (z = 0; z < height; z++)
 	{
 		for (t = 0; t < width; t++)
-			mee[z][t] = 0;
+			ne[z][t] = 0;
 	}
 
 	return (ne);
