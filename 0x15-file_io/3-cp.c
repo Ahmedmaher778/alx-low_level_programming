@@ -47,9 +47,8 @@ void close_file(int fd)
 
 /**
  * main - Copies the contents of a file to another file.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
- *
+ * @argc: number of arguments supplied to program
+ * @argv: array of pointers to the arguments
  * Return: 0 on success
 */
 
@@ -70,7 +69,7 @@ int main(int argc, char *argv[])
 	t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (frm == -1 || r == -1)
+		if (frm == -1 || y == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
