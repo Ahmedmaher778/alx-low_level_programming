@@ -22,8 +22,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (value_copy == NULL)
 		return (0);
 
-	inde = key_inde((const unsigned char *)key, ht->size);
-	for (l = inde; ht->array[l]; l++)
+	index = key_index((const unsigned char *)key, ht->size);
+	for (l = index; ht->array[l]; l++)
 	{
 		if (strcmp(ht->array[l]->key, key) == 0)
 		{
@@ -46,8 +46,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	new->value = value_copy;
-	new->next = ht->array[inde];
-	ht->array[inde] = new;
+	new->next = ht->array[index];
+	ht->array[index] = new;
 
 	return (1);
 }
